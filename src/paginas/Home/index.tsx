@@ -11,12 +11,12 @@ function App() {
       <NavBar />
       <Banner />
       <div className={estilos.MiniBanners}>
-        <img src="/imagens/cozinhar_01.jpg" alt="Um prato conceitual" />
+       <img src="/imagens/cozinhar_01.jpg" alt="Um prato conceitual" />  
         <div className={estilos.CardCentral}>
-          <h2>A melhor rede de restaurantes!</h2>
+          <h2>Nossos Restaurantes favoritos todos reunidos :)</h2>
           <div>
-            <p>seja um parceiro agora:</p>
-            <p>ligue para <a href="callto:99999999999">(99) 99999-999</a></p>
+            <p></p>
+            <p><a href="callto:99999999999"></a></p> 
           </div>
         </div>
         <img src="/imagens/cozinhar_02.jpg" alt="Um hambúrguer desconstruído" />
@@ -39,6 +39,7 @@ function App() {
           <h4>Sobremesas</h4>
         </div>
       </div>
+    
       <div className={estilos.Links}>
         <h3>Conheça os melhores restaurantes</h3>
         <p>Clique <Link to='/restaurantes'>aqui</Link></p>
