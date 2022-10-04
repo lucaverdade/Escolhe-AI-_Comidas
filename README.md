@@ -26,6 +26,8 @@ Para abrir e rodar o projeto, execute npm i para instalar as dependências e npm
 Para abrir a pagina da aplicação:
 - npm i 
 - npm start
+
+
  Abrir a pagina da API:
  - Docker
 
