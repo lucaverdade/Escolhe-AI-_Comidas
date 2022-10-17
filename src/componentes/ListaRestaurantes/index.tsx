@@ -21,14 +21,16 @@ useEffect(() => {
 
 const verMais = () => {
   axios.get<IPaginacao<IRestaurante>>(proximaPagina)
+  .then(resposta => {
+    setRestaurantes([...restaurantes, ...resposta.data.results])
+    setProximaPagina(resposta.data.next)
+  })
 }
 
   return (<section className={style.ListaRestaurantes}>
     <h1>Os restaurantes mais <em>bacanas</em>!</h1>
     {restaurantes?.map(item => <Restaurante restaurante={item} key={item.id} />)}
-    {proximaPagina && <button onClick={verMais}>
-      ver mais
-      </button>}
+    {proximaPagina && <button onClick={verMais}>ver Mais</button>}
   </section>)
 }
 
