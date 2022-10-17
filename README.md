@@ -23,7 +23,14 @@ Se liga nessa lista de tudo que usaremos nesse treinamento:
 ## 🛠️ Abrir e rodar o projeto
 
 Para abrir e rodar o projeto, execute npm i para instalar as dependências e npm start para inicar o projeto.
+Para abrir a pagina da aplicação:
+- npm i 
+- npm start
 
-Depois, acesse <a href="http://localhost:3000/">http://localhost:3000/</a> no seu navegador.
+
+ Abrir a pagina da API:
+ - Docker
+
+Depois, acesse <a href="http://localhost:3000/">http://localhost:8000/</a> no seu navegador.
 
 
