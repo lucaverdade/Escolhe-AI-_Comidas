@@ -19,7 +19,7 @@ const AdministracaoRestaurantes = () => {
 
 
     const excluir = (restaurenteAhSerExcluido: IRestaurante) => {
-    axios.delete(`http://localhost:8000/api/v2/restaurantes/${restaurenteAhSerExcluido.id}/`)
+    axios.delete(`https://escolheaicomidas.vercel.app/restaurantes/${restaurenteAhSerExcluido.id}/`)
     .then(() => {
         const listaRestaurante = restaurantes.filter(restaurante => restaurante.id !== restaurenteAhSerExcluido.id)
         setRestaurantes([...listaRestaurante])
